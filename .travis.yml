@@ -10,6 +10,7 @@ before_install:
 script:
   - docker run -e CI=true jd2050/docker-react npm run test
 
+#deployment workflow
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
